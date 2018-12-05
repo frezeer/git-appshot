@@ -7,7 +7,7 @@ use App\Product;
 
 class ProductController extends Controller
 {
-    //
+    //vista listado de productos
     public function index(){
     	// $products = Product::all();
     	$products = Product::paginate(10);
@@ -20,8 +20,18 @@ class ProductController extends Controller
     	//formulario de registro
     }
 
-    public function store(){
-    	return view('');
-    	//registrar el producto en la bd
+
+    //registrar el producto en la bd
+    public function store(Request $request)
+    {
+    	//dd($request->all());
+    	$request->all();
+    	$product = new Product();
+    	$product->name = $request->input('name');
+    	$product->description = $request->input('description');
+    	$product->price = $request->input('price');
+    	$product->long_description = $request->input('long_description');
+    	$product->save();
+    	return redirect('/admin/products');
     }
 }
