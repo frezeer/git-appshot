@@ -19,7 +19,18 @@ class ProductController extends Controller
     	return view('admin.products.create');
     	//formulario de registro
     }
+    //formulario de edicion de registro
+    public function edit($id)
+    {
+    	echo "Mostrar aqui el formulario de edicion con id $id";
+    	$product = Product::find($id);
+		return view('admin.products.edit')->with(compact(product));
+	}
 
+ //    public function update(){
+	// 	return view('admin.products.update');
+	// //formulario de registro
+	// }
 
     //registrar el producto en la bd
     public function store(Request $request)
