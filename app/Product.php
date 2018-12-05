@@ -2,7 +2,6 @@
 
 namespace App;
 
-
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
@@ -12,7 +11,7 @@ class Product extends Model
     	return $this->belongsTo(Category::class);
 	}
 	//1 producto puede tener muchas imagenes
-	public function imagen(){
+	public function images(){
     	return $this->hasMany(ProductImage::class);
     }
 }

@@ -17,7 +17,7 @@ class CreateProductImagesTable extends Migration
             $table->increments('id');
 
 
-            $table->string('imagen');
+            $table->string('images');
             $table->boolean('featured')->default(false);
             //llaves foraneas 
             $table->unsignedInteger('product_id');
