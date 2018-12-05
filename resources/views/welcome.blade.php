@@ -23,8 +23,10 @@
                 <div class="section text-center section-landing">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h2 class="title">Let's talk product</h2>
-                            <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.</h5>
+                            <h2 class="title">¿Por que comprar en App Shop?</h2>
+                            <h5 class="description">
+                                Es un canal seguro rapido donde podras comprar lo que tu nesesites
+                            </h5>
                         </div>
                     </div>
 
@@ -35,8 +37,8 @@
                                     <div class="icon icon-primary">
                                         <i class="material-icons">chat</i>
                                     </div>
-                                    <h4 class="info-title">First Feature</h4>
-                                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                                    <h4 class="info-title">Atendemos tus dudas</h4>
+                                    <p>Atendemos rapidamente cualquier consulta que tengas via chat no esta solo si no que siempre estaremos atentos a tus inquietudes</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -44,8 +46,8 @@
                                     <div class="icon icon-success">
                                         <i class="material-icons">verified_user</i>
                                     </div>
-                                    <h4 class="info-title">Second Feature</h4>
-                                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                                    <h4 class="info-title">Pago Seguro</h4>
+                                    <p>Todo pedido que realices sera confirmado atravez de una llamda si no confias en linea puedes pagar contra entrega el valor acordado.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -53,8 +55,8 @@
                                     <div class="icon icon-danger">
                                         <i class="material-icons">fingerprint</i>
                                     </div>
-                                    <h4 class="info-title">Third Feature</h4>
-                                    <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                                    <h4 class="info-title">Informacion Privada</h4>
+                                    <p>Los pedidos que realices solo los conoceras atravez de tu panel de usuario Nadie mas tiene acceso a esta informacion.</p>
                                 </div>
                             </div>
                         </div>
@@ -121,33 +123,33 @@
                 <div class="section landing-section">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <h2 class="text-center title">Work with us</h2>
-                            <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+                            <h2 class="text-center title">¿Aun no te has Registrado?</h2>
+                            <h4 class="text-center description">Resgitrate ingresando tus datos basicos y podras realizar tus pedidos atravez de tu carro d compras. Si aun no te decides , de todas formas , con tu cuenta de usuarios podras hacer todas tus consultas sin compromiso.</h4>
                             <form class="contact-form">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Your Name</label>
+                                            <label class="control-label">Ingresa tu Nombre</label>
                                             <input type="email" class="form-control">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group label-floating">
-                                            <label class="control-label">Your Email</label>
+                                            <label class="control-label">Ingresa tu Correo</label>
                                             <input type="email" class="form-control">
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="form-group label-floating">
-                                    <label class="control-label">Your Messge</label>
+                                    <label class="control-label">Escribe tu consulta</label>
                                     <textarea class="form-control" rows="4"></textarea>
                                 </div>
 
                                 <div class="row">
                                     <div class="col-md-4 col-md-offset-4 text-center">
                                         <button class="btn btn-primary btn-raised">
-                                            Send Message
+                                            Enviar Consulta
                                         </button>
                                     </div>
                                 </div>
