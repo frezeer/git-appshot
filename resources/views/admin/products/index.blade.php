@@ -3,12 +3,10 @@
 @section('body-class', 'product-page')
 @section('content')
 <div class="wrapper">
-        <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
-        </div>
-
+    <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
+     </div>
         <div class="main main-raised">
             <div class="container">
-                
                     <div class="section text-center">
                          <h2 class="title">Productos Disponibles</h2>
                              <div class="team">
@@ -33,16 +31,25 @@
                                                 <td>{{ $product->description }}</td>
                                                 <td>{{ $product->category ? $product->category->name: 'General' }}</td>
                                                 <td class="text-right"> {{ $product->price }}</td>
+                                                
                                                 <td class="td-actions text-right">
-                                                    <button type="button" rel="tooltip" title="Ver Producto" class="btn btn-info btn-simple btn-xs">
-                                                        <i class="fa fa-info"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="EditarProducto" class="btn btn-success btn-simple btn-xs">
+                                            
+                                                 
+                                                    <form method="post" action="{{ url('/admin/products/'.$product->id.'/') }}"  >
+                                                     {{ csrf_field() }}
+                                                     {{ method_field('DELETE') }}    
+
+                                                     <a href="#" type="button" rel="tooltip" title="Ver Producto" class="btn btn-info btn-simple btn-xs">
+                                                    <i class="fa fa-info"></i>
+                                                    </a>
+                                                
+                                                    <a href="{{ url('/admin/products/'.$product->id.'/edit') }}" type="button" rel="tooltip" title="EditarProducto" class="btn btn-success btn-simple btn-xs">
                                                         <i class="fa fa-edit"></i>
-                                                    </button>
-                                                    <button type="button" rel="tooltip" title="Borrar" class="btn btn-danger btn-simple btn-xs">
+                                                    </a> 
+                                                    <button type="submit" rel="tooltip" title="Borrar Producto" class="btn btn-danger btn-simple btn-xs">
                                                         <i class="fa fa-times"></i>
                                                     </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                             @endforeach
@@ -54,7 +61,7 @@
                     </div>
                 </div>
             </div>
-        <footer class="footer">
+            <footer class="footer">
             <div class="container">
                 <nav class="pull-left">
                     <ul>
