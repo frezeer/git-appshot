@@ -16,11 +16,11 @@
                                         <thead>
                                             <tr>
                                                 <th class="text-center">#</th>
-                                                <th>Nombre</th>
-                                                <th class="col-md-4">Descripcion</th>
-                                                <th>Categorias</th>
+                                                <th class="col-md-2 text-center ">Nombre</th>
+                                                <th class="col-md-4 text-center">Descripcion</th>
+                                                <th class="text-center">Categorias</th>
                                                 <th class="text-right">Precio</th>
-                                                <th class="text-right">Opciones</th>
+                                                <th class="text-center">Opciones</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -32,9 +32,7 @@
                                                 <td>{{ $product->category ? $product->category->name: 'General' }}</td>
                                                 <td class="text-right"> {{ $product->price }}</td>
                                                 
-                                                <td class="td-actions text-right">
-                                            
-                                                 
+                                                <td class="td-actions text-center">
                                                     <form method="post" action="{{ url('/admin/products/'.$product->id.'/') }}"  >
                                                      {{ csrf_field() }}
                                                      {{ method_field('DELETE') }}    
@@ -45,7 +43,11 @@
                                                 
                                                     <a href="{{ url('/admin/products/'.$product->id.'/edit') }}" type="button" rel="tooltip" title="EditarProducto" class="btn btn-success btn-simple btn-xs">
                                                         <i class="fa fa-edit"></i>
-                                                    </a> 
+                                                    </a>
+
+                                                    <a href="{{ url('/admin/products/'.$product->id.'/images') }} " type="button" rel="tooltip" title="Imagenes del Producto" 
+                                                    class="btn btn-warning btn-simple btn-xs"><i class="fa fa-image"></i>
+                                                    </a>
                                                     <button type="submit" rel="tooltip" title="Borrar Producto" class="btn btn-danger btn-simple btn-xs">
                                                         <i class="fa fa-times"></i>
                                                     </button>

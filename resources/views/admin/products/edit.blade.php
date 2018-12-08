@@ -19,7 +19,7 @@
                         <div class="col-sm-6">
                             <div class="form-group label-floating">
                                 <label class="control-label">Nombre del Producto </label>
-            <input type="text" class="form-control" name="name" value="{{ old('name', $product->name) }}" />
+                                <input type="text" class="form-control" name="name" value="{{ old('name', $product->name) }}" />
                                 </div>
                             </div>
                   
@@ -38,14 +38,12 @@
         <textarea class="form-control"  rows="5" name="long_description" value="{{ old('long_description', $product->long_description) }}" />
         {{ $product->long_description }}      
         </textarea>
-        </div>
-                        
-<div align="center">                             
-        <button type="submit" class="btn btn-primary">Registrar Producto</button><br />
-        <a href="{{ url('/admin/products') }}"  class="btn btn-default">Cancelar</a>
-</div>                      
-                </form>
-     
+            </div>             
+                <div align="center">                             
+                        <button type="submit" class="btn btn-primary">Registrar Producto</button><br />
+                        <a href="{{ url('/admin/products') }}"  class="btn btn-default">Cancelar</a>
+                </div>                      
+             </form>
             </div>
            </div>
          </div>  
